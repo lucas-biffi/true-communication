@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página Inicial</title>
+</head>
+
+<body>
+    
+    <header class="menuHorizontal">
+        <h1>True Communication</h1>
+        <nav class="menu">
+            <button class="btnPaginas" id="inicio" onclick="window.location.href='../paginaInicial/index.html'" >Início</button>
+            <button class="btnPaginas" id="sobreNos" onclick="window.location.href='../paginaSobreNos/index.html'">Sobre Nós</button>
+            <button class="btnPaginas" id="relatos" onclick="window.location.href='../paginaRelatos/index.html'">Relatos</button>
+            <button class="btnPaginas" id="CadastrarRelato" onclick="window.location.href='../paginaCadastrarRelatos/index.html'">Cadastrar Relato</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <header>
+                <h2>Cuidado com golpes telefônicos</h2>
+                <h2><span>Não Forneça suas informações pessoais</span></h2>
+            </header>
+            <p>Recebeu uma ligação suspeita? Cuidado, o banco não solicita informações de confirmação por telefone.</p>
+            <p>Confira abaixo dicas de proteção para esses golpes</p>
+        </section>
+
+        <div class="cardsBox">
+            <article class="cardsDicas">
+                <img class="icones" src="img/iconeDesconfianca.png" alt="Icone de informação amarelo">
+                    <header>
+                        <h3>Desconfie</h3>
+                    </header>
+                        <p>Se receber ligação dizendo ser de banco, operadora ou órgão público pedindo dados pessoais, não forneça as informações.</p>
+            </article>
+
+            <article class="cardsDicas">
+                
+                <img class="icones" src="img/iconeTelefone.png" alt="Icone de telefone vermelho">
+                    <header>
+                        <h3>Desligue a chamada</h3>
+                    </header> 
+                        <p>Se o número parecer suspeito, desligue e ligue você mesmo para o canal oficial da empresa. Prefira sempre os números disponíveis no site oficial ou no aplicativo.</p>
+            </article>
+
+            <article class="cardsDicas">
+                <img class="icones" src="img/iconeDados.png" alt="Icone de identidade pessoal verde">
+                    <header>
+                        <h3>Proteja seus dados pessoais</h3>
+                    </header>    
+                        <p>Nunca informe CPF, número de cartão, senhas ou códigos de autenticação recebidos por SMS, WhatsApp, E-mail e Ligações.</p>
+            </article>
+        </div>
+
+        <section class="cardFinal">
+                <header>
+                    <h3>Recebeu uma tentativa de golpe?</h3>
+                </header>
+            <p>Compartilhe com a comunidade e ajude a evitar demais golpes.</p>
+            <button id="btnCompartilharRelato" onclick="window.location.href='../paginaCadastrarRelatos/index.html'">Compartilhar Relato</button>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

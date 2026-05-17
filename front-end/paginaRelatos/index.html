@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Relatos</title>
+</head>
+
+<body>
+    
+    <header class="menuHorizontal">
+        <h1>True Communication</h1>
+        <nav class="menu">
+            <button class="btnPaginas" id="inicio" onclick="window.location.href='../paginaInicial/index.html'">Início</button>
+            <button class="btnPaginas" id="sobreNos" onclick="window.location.href='../paginaSobreNos/index.html'">Sobre Nós</button>
+            <button class="btnPaginas" id="relatos" onclick="window.location.href='../paginaRelatos/index.html'">Relatos</button>
+            <button class="btnPaginas" id="CadastrarRelato" onclick="window.location.href='../paginaCadastrarRelatos/index.html'">Cadastrar Relato</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Relatos Compartilhados pela Comunidade</h1>
+        <p>Visualize abaixo os registos mais recentes de tentativas de fraude compartilhados pela comunidade, 
+        consulte os detalhes para identificar padrões e proteger-se contra abordagens semelhantes. 
+        <span>Compartilhar a informação é a nossa melhor defesa.</span></p>
+
+        <div id="listaRelatos">
+            <p>Carregando relatos....</p>
+        </div>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

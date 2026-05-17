@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastrar Relatos</title>
+</head>
+
+<body>
+    
+    <header class="menuHorizontal">
+        <h1>True Communication</h1>
+        <nav class="menu">
+            <button class="btnPaginas" id="inicio" onclick="window.location.href='../paginaInicial/index.html'">Início</button>
+            <button class="btnPaginas" id="sobreNos" onclick="window.location.href='../paginaSobreNos/index.html'">Sobre Nós</button>
+            <button class="btnPaginas" id="relatos" onclick="window.location.href='../paginaRelatos/index.html'">Relatos</button>
+            <button class="btnPaginas" id="CadastrarRelato" onclick="window.location.href='../paginaCadastrarRelatos/index.html'">Cadastrar Relato</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="introducao">
+            <h2>Registrar Relato de Golpe</h2>
+            <p>Use esse espaço para registrar seu relato sobre a tentativa de golpe, o compartilhamento da informação ajuda a comunidade ficar em alerta e fortaleçe a prevenção contra golpes.</p>
+        </article>
+
+        <form id="formRelato">
+
+            <label for="tipo_golpe">Tipo de Tentativa de Golpe</label>
+            <select name="tipo_golpe" id="tipo_golpe" required>
+                <option value="" selected disabled>Selecione</option>
+                <option value="Central de Atendimento">Falsa Central de Atendimento</option>
+                <option value="Pix Errado">Pix Errado</option>
+                <option value="Emprestimo">Empréstimo Falso</option>
+                <option value="Suporte Tecnico">Suporte Técnico</option>
+                <option value="Confirmacao Compra">Confirmação de Compra</option>
+                <option value="Investimento Falso">Falso Investimento</option>
+            </select>
+
+            <label for="tipo_contato">Tipo de Contato</label>
+            <select name="tipo_contato" id="tipo_contato" required>
+                <option value="" selected disabled>Selecione</option>
+                <option value="Ligacao Telefonica">Ligação Telefônica</option>
+                <option value="Whatsapp">WhatsApp</option>
+                <option value="Mensagem SMS">Mensagem SMS</option>
+            </select>
+
+
+            <label for="data_tentativa">Data da Tentativa</label>
+            <input type="date" id="data_tentativa" required>
+
+            <label for="numero">Número que Ligou</label>
+            <input type="text" id="numero" required maxlength="15">
+
+            <label for="banco">Banco Mencionado</label>
+            <select name="banco" id="banco" required>
+                <option value="" selected disabled>Selecione</option>
+                <option value="Bradesco">Bradesco</option>
+                <option value="Itaú">Itaú</option>
+                <option value="Santander">Santander</option>
+                <option value="Caixa Econômica Federal">Caixa Econômica Federal</option>
+                <option value="Banco do Brasil">Banco do Brasil</option>
+                <option value="Nubank">Nubank</option>
+                <option value="Inter">Inter</option>
+                <option value="Sicredi">Sicredi</option>
+                <option value="Sicoob">Sicoob</option>
+                <option value="C6 Bank">C6 Bank</option>
+                <option value="PicPay">PicPay</option>
+                <option value="XP">XP</option>
+                <option value="PagBank">PagBank</option>
+            </select>
+
+            <label for="descricao">Descrição da Tentativa de Golpe</label>
+            <textarea name="descricao" rows="4" id="descricao" maxlength="600" required></textarea>
+
+            <button type="submit" id="btnEnviar">Enviar</button>
+
+        </form>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

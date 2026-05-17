@@ -1,0 +1,115 @@
+* {
+    border: 0;
+    margin: 0;
+    font-family: Calibri;
+}
+
+body{
+    background-color: #F8F9FA;
+}
+
+main{
+    font-size: 16px;
+}
+
+/*=================Estilização Menu Horizontal=====================*/
+.menuHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid gainsboro;
+    box-shadow: 1px 1px 12px gainsboro;
+}
+.menuHorizontal h1{
+    color: #BA181B;
+}
+
+.btnPaginas{
+    margin: 0 2px 0 0;
+    padding: 12px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: white;
+    cursor: pointer;
+}
+/*==================================================================*/
+
+/*==========================Estilização Total=======================*/
+
+main{
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    background-color: white;
+}   
+
+.introducao{
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.introducao p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#formRelato{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#descricao{
+    border: 2px solid gainsboro;
+    resize: none;
+}
+
+input, select{
+    font-size: 16;
+    padding: 6px;
+    border-radius: 4px;
+    border: 2px solid gainsboro;
+}
+
+label{
+    margin-bottom: 2px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+#btnEnviar{
+    width: 360px;
+    padding: 6px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    background-color: #00843E;
+    border: green 2px solid;
+}
+
+#descricaoGolpe{
+    border-radius: 4px;
+    border: 2px solid gainsboro;
+    font-family: Calibri;
+    text-align: justify;
+}
+/*==================================================================*/
+
+/*==============================Animações==========================*/
+.btnPaginas:hover{
+    background-color: #BA181B;
+    color: white;
+}
+/*==================================================================*/

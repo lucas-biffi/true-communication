@@ -1,0 +1,128 @@
+* {
+    border: 0;
+    margin: 0;
+    font-family: Calibri;
+}
+
+body{
+    background-color: #F8F9FA;
+}
+
+main{
+    font-size: 18px;
+}
+
+/*=================Estilização Menu Horizontal=====================*/
+.menuHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 2px solid gainsboro;
+    box-shadow: 1px 1px 12px gainsboro;
+}
+.menuHorizontal h1{
+    color: #BA181B;
+}
+
+.btnPaginas{
+    margin: 0 2px 0 0;
+    padding: 12px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: white;
+    cursor: pointer;
+}
+/*==================================================================*/
+
+/*========================Estilização Introdução====================*/
+.introducao{
+    text-align: center;
+    margin: 32px 0 0 0;
+}
+
+.introducao header{
+    font-size: 22px;
+    margin: 8px;
+}
+
+span{
+    color: #BA181B;
+    font-style: italic;
+}
+/*==================================================================*/
+
+/*==============================Cards===============================*/
+.cardsBox{
+    margin-top: 22px;
+    margin-bottom: 16px;
+    gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.cardsDicas{
+    max-width: 300px;
+    padding: 16px;
+    border-radius: 14px;
+    background-color: white;
+}
+
+.cardsDicas p{
+    color: #333;
+    text-align: justify;
+}
+
+.cardsDicas header{
+    margin-bottom: 10px;
+}
+
+.icones{
+    width: 60px;
+    margin-bottom: 10px;
+}
+/*==================================================================*/
+
+/*==============================Card Final==========================*/
+.cardFinal{
+    max-width: 640px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FCDCDC;
+}
+
+#btnCompartilharRelato{
+    width: 600px;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 10px;
+    justify-content: center;
+    align-self: center;
+    font-weight: bold;
+    color: white;
+    background-color: #BA181B;
+    cursor: pointer;
+}
+
+.cardFinal h3{
+    font-size: 22px;
+    color: #BA181B;
+}
+/*==================================================================*/
+
+/*==============================Animações==========================*/
+.btnPaginas:hover{
+    background-color: #BA181B;
+    color: white;
+}
+/*==================================================================*/
